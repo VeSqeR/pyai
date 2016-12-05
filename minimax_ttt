@@ -66,7 +66,7 @@ def min_play(game_state):
     return best_score
 
 def max_play(game_state):
-    game_state.is_gameover():
+     if game_state.is_gameover():
         return evals(game_state)
     moves = game_state.get_possible_moves()
     best_score = -2 #not possible
